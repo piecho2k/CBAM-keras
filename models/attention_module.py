@@ -1,6 +1,6 @@
-from keras.layers import GlobalAveragePooling2D, GlobalMaxPooling2D, Reshape, Dense, multiply, Permute, Concatenate, Conv2D, Add, Activation, Lambda
-from keras import backend as K
-from keras.activations import sigmoid
+from tensorflow.keras.layers import GlobalAveragePooling2D, GlobalMaxPooling2D, Reshape, Dense, multiply, Permute, Concatenate, Conv2D, Add, Activation, Lambda
+from tensorflow.keras import backend as K
+from tensorflow.keras.activations import sigmoid
 
 def attach_attention_module(net, attention_module):
   if attention_module == 'se_block': # SE_block
